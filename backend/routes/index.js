@@ -1,8 +1,8 @@
 // backend/routes/index.js
 const express = require('express');
 const userRouter = require('./user');
-const accountRouter = require('./account');
-const adminRouter = require('./admin');
+// const accountRouter = require('./account');
+// const adminRouter = require('./admin');
 
 const router = express.Router();
 

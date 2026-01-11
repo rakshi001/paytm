@@ -4,6 +4,13 @@ import mongoose from 'mongoose';
 //then create a model[more like a table ]
 //then export
 
+const MONGO_URL = process.env.MONGO_URL;
+
+mongoose
+  .connect(MONGO_URL)
+  .then(() => console.log('Mongodb connected'))
+  .catch((err) => console.error(err));
+
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },

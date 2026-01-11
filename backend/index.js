@@ -1,8 +1,16 @@
 // backend/index.js
 const express = require('express');
+const app = express();
+const cors = require('cors');
+
 const mainRouter = require('./routes/index');
 
-const app = express();
+const corsOptions = {
+  origin: ['http://localhost:5173'],
+};
+
+app.use(express.json());
+app.use(cors(corsOptions));
 
 app.use('/api/v1', mainRouter);
 
