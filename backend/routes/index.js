@@ -7,7 +7,7 @@ const userRouter = require('./user');
 const router = express.Router();
 
 router.use('/user', userRouter);
-router.use('/account', accountRouter);
-router.use('/admin', adminRouter);
+// router.use('/account', accountRouter);
+// router.use('/admin', adminRouter);
 
 module.exports = router;

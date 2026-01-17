@@ -1,5 +1,4 @@
-import mongoose from 'mongoose';
-
+const mongoose = require('mongoose');
 //first create a user schema
 //then create a model[more like a table ]
 //then export
